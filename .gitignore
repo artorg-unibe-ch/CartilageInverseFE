@@ -216,3 +216,12 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ---- CartilageInverseFE ----
+.DS_Store
+# large / intermediate FEBio files in example runs (kept locally, not in the repo)
+*.xplt
+Data_Example/**/runs/*/run.feb
+Data_Example/**/runs/*/loaded.feb
+# *.log is ignored above; keep the force log of the optimum
+!Data_Example/**/runs/*/best_rb_force.log
